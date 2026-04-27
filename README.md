@@ -8,7 +8,7 @@ The project aims to implement a **zero-day evaluation** where one attack categor
 ## Problem Statement
 Conventional signature-based intrusion detection systems are capable of only detecting known attacks as they rely on a set of attack signatures. However, zero-day attacks have not been encountered before and don't match the signatures. This project overcomes that limitation by employing anomaly detection techniques that capture the normal behavior of traffic, and detect any abnormalities.
 
-## Dataset
+## Dataset used
 This project uses the **NSL-KDD dataset**, a widely-used intrusion detection dataset.
 
 NSL-KDD contains a record for each network connection, which includes:
@@ -81,7 +81,6 @@ The final executed experiment used **Probe** as the unseen attack category.
 | Isolation Forest | 0.950858 | 0.663362 | 0.781509 | 0.956714 | 0.008547 |
 | One-Class SVM | 0.765641 | 0.914911 | 0.833647 | 0.895909 | 0.069818 |
 
-## Result Interpretation
 The results indicate that both models successfully detected unseen Probe attacks.
 
 - **One-Class SVM** achieved higher recall and F1-score, which means it detected more unseen attacks.
@@ -95,10 +94,10 @@ This reveals a practical trade-off:
 
 '''text
 .
-├── zero_day_detection.py
-├── README.md
-├── requirements.txt
-└── outputs_probe/
-    ├── metrics.csv
-    ├── metrics.json
-    └── run_summary.json
+|---zero_day_detection.py
+|--- README.md
+|--- requirements.txt
+|---outputs_probe/
+    |--- metrics.csv
+    |--- metrics.json
+    |--- run_summary.json

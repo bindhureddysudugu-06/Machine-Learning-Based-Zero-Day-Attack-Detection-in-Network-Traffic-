@@ -92,8 +92,7 @@ This reveals a practical trade-off:
 
 ## Repository Structure
 
-'''text
-.
+
 |---zero_day_detection.py
 |--- README.md
 |--- requirements.txt

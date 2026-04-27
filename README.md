@@ -1,7 +1,7 @@
 # Machine Learning Based Zero-Day Attack Detection in Network Traffic
 
 ## Overview
-The aim of this project is to design and implement a machine learning-based anomaly detection system to detect **zero-day attacks** on the **NSL-KDD dataset**. The objective is to detect unknown attacks in network traffic, by training a model on normal traffic to detect anomalies in the test phase.
+The aim of this project is to design and implement a machine learning-based anomaly detection system to detect zero-day attacks on the **NSL-KDD dataset**. The objective is to detect unknown attacks in network traffic, by training a model on normal traffic to detect anomalies in the test phase.
 
 The project aims to implement a **zero-day evaluation** where one attack category is removed from the dataset during training - considered as unseen attacks - and used for testing purposes. For this experiment, **Probe** attack category had been excluded.
 
@@ -24,7 +24,7 @@ In this project we classify the attack labels into:
 - u2r
 
 ## Project Objective
-The aim of this project is to test the ability of anomaly detection models to detect **new attacks** in the absence of any attack signatures.
+The aim of this project is to test the ability of anomaly detection models to detect new attacks in the absence of any attack signatures.
 
 ## Methodology
 
@@ -35,7 +35,7 @@ We load the NSL-KDD files (train and test) using Python and Pandas.
 Original attack labels are grouped into attack categories like: 'probe', 'dos', 'r2l' and 'u2r'.
 
 ### 3. Zero-Day Setup
-This project is based on an **attack-wise zero-day split**:
+This project is based on an attack-wise zero-day split:
 - train on normal traffic
 - test on normal + known (non-held-out) attacks
 - test on normal + unknown attack (held-out)
